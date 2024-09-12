@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
@@ -19,7 +20,7 @@ export default function Navigation() {
                 </div>
                 <div className="hidden md:block">
                 <div className="flex items-center gap-10">
-                    <img className="w-5 object-contain" src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" alt="logo" />
+                    <Image height={100} width={100} className="w-5 object-contain" src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" alt="logo" />
                     <ul className="menu menu-horizontal px-1">
                         <li className="font-semibold"><a href="#home">Home</a></li>
                         <li className="font-semibold"><a href="#about">About</a></li>

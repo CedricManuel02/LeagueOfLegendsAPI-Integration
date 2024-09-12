@@ -8,7 +8,7 @@ export default function Home() {
         <div className="w-full lg:w-10/12 m-auto flex item-center flex-col justify-center h-screen px-5">
           <h1 className="z-10 text-slate-200 text-5xl font-semibold uppercase sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-7xl">League <span className="font-customFont normal-case">of</span> <br /> Legends</h1>
           <p className="z-10 sm:4/12 md:w-6/12 lg:w-4/12 2xl:w-4/12 text-slate-300 text-base py-5">Wheather you like to dive straight into the fray,
-            support your teamates or something in between, there's a spot for you on the Rift.
+            support your teamates or something in between, there&apos;s a spot for you on the Rift.
           </p>
           <a href="https://signup.leagueoflegends.com/en-ph/signup/redownload" className="btn btn-primary w-44 text-white relative z-10">Download</a>
         </div>

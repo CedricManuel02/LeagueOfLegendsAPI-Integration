@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import React, { useRef, useState } from 'react'
 
 interface IChampions {
@@ -38,12 +39,14 @@ export default function Card({ props }: any) {
                     <div className="modal-box p-0">
                         <div className="card w-full">
                             <figure>
-                                <img
+                                <Image
                                     src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${data?.id}_0.jpg`}
                                     alt="Champion Splash"
-                                    loading="lazy"
+                                    width={500}
+                                    height={500}
                                     className="w-full h-64 object-cover"
-                                />
+                                    loading="lazy"
+                            />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">
@@ -68,7 +71,7 @@ export default function Card({ props }: any) {
                 <div className="relative cursor-pointer group" key={data.key} onClick={() => openModal(data.id)}>
                     <div className="avatar">
                         <div className="w-full rounded-md">
-                            <img src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${data.image.full}`} alt={data.name} />
+                            <Image width={100} height={100} loading="lazy" src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${data.image.full}`} alt={data.name} />
                         </div>
                     </div>
                     <div className="hidden group-hover:block absolute bg-customColor h-full top-0 w-full ">
