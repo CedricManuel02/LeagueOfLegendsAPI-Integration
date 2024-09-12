@@ -8,13 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundColor: {
+        backgroundRGB: "#0093E9",
+        backgroundBlack: "#000024",
       },
+      colors: {
+        customColor: "rgba(0,0,0,0.5)",
+        customColors: "rgba(0,0,0,0.5)",
+        navy: {
+          800: '#002436',
+          900: '#000024',
+        },
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
 export default config;
