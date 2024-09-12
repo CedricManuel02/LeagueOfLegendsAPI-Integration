@@ -70,8 +70,8 @@ export default function Card({ props }: any) {
             {props.champion.map((data: any) => (
                 <div className="relative cursor-pointer group" key={data.key} onClick={() => openModal(data.id)}>
                     <div className="avatar">
-                        <div className="w-full rounded-md">
-                            <Image width={100} height={100} loading="lazy" src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${data.image.full}`} alt={data.name} />
+                        <div className="h-24 rounded-md">
+                            <Image fill={true} loading="lazy" src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${data.image.full}`} alt={data.name} />
                         </div>
                     </div>
                     <div className="hidden group-hover:block absolute bg-customColor h-full top-0 w-full ">
